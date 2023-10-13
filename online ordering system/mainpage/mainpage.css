@@ -1,0 +1,57 @@
+:root {
+    --primary-color: #075183;
+    --secondary-color: #A8D9FA;
+    --accent-color: #0B7ECB;
+    --bg-color: #FFFFFF;
+    --text-color: #021827;
+}
+
+.menu-navigation {
+    position: absolute;
+    width: 94vw;
+    right: 0;
+    display: flex;
+    height: max-content;
+}
+
+.menu-form {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+}
+
+.buttons {
+    justify-content: space-evenly;
+    width: 400px;
+}
+
+.buttons,
+.search-bar {
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+}
+
+#search-field {
+    background-color: var(--bg-color);
+    color: grey;
+    padding: 4px 8px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 8px;
+    outline: none;
+}
+
+#search-field:focus {
+    border: 2px solid var(--primary-color);
+}
+
+#foods-button,
+#beverages-button {
+    width: 150px;
+    background-color: var(--bg-color);
+    color: grey;
+    padding: 4px 16px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 8px;
+}
