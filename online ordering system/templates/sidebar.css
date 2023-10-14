@@ -6,21 +6,17 @@
     --text-color: #021827;
 }
 
-body {
-    background-color: #f2f2f3;
-}
-
-h3 {
+.top-icons h3 {
     margin: 0;
     padding: 20px 10px;
     text-align: center;
 }
 
 .sidebar {
-    position: absolute;
-    width: 6vw;
+    width: auto;
     height: 100vh;
     background-color: white;
+    box-shadow: inset -10px 0 20px -2px rgba(0, 0, 0, 0.3);
 }
 
 .middle-icon-form {
@@ -77,10 +73,4 @@ label {
 #menu-button:checked ~ label .menu-icon,
 #history-button:checked ~ label .history-icon {
     fill: var(--secondary-color);
-}
-
-#home-button:checked ~ .home-label,
-#menu-button:checked ~ .menu-label,
-#history-button:checked ~ .history-label {
-    border-right: 3px solid var(--secondary-color);
 }

@@ -20,17 +20,8 @@
     
     <?php include('../templates/sidebar.php'); ?>
 
-    <div class="menu-navigation">
-        <form class="menu-form" action="" method="POST">
-            <div class="buttons">
-                <input id="foods-button" type="submit" name="Foods" value="Foods">
-                <input id="beverages-button" type="submit" name="Beverages" value="Beverages">
-            </div>
-            <div class="search-bar">
-                <input id="search-field" type="text" autocomplete="off" name="search" placeholder="Search Product...">
-            </div>
-        </form>
-    </div>
+    <?php include('products.php'); ?>
 
+    <?php include('cart.php') ?>
 </body>
 </html>
