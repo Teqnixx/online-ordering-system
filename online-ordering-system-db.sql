@@ -167,6 +167,32 @@ CREATE TABLE `product_categories` (
 
 /*Data for the table `product_categories` */
 
+/*Table structure for table `product_flavors` */
+
+DROP TABLE IF EXISTS `product_flavors`;
+
+CREATE TABLE `product_flavors` (
+  `flavorID` int(11) NOT NULL AUTO_INCREMENT,
+  `flavorName` varchar(100) NOT NULL,
+  PRIMARY KEY (`flavorID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+/*Data for the table `product_flavors` */
+
+/*Table structure for table `product_sizes` */
+
+DROP TABLE IF EXISTS `product_sizes`;
+
+CREATE TABLE `product_sizes` (
+  `productSizeID` int(11) NOT NULL AUTO_INCREMENT,
+  `productSizeName` varchar(20) NOT NULL,
+  `productSize` int(11) NOT NULL,
+  `productSizePrice` double NOT NULL,
+  PRIMARY KEY (`productSizeID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+/*Data for the table `product_sizes` */
+
 /*Table structure for table `products` */
 
 DROP TABLE IF EXISTS `products`;
